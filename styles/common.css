@@ -1,0 +1,13 @@
+#main_wrap header .header {position: absolute; top: 30px; left: 0; z-index: 10; width: 100%;}
+#main_wrap header .header .container {
+    padding: 15px  80px; height: 90px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+#main_wrap header .header .container .menu {width: max-content; display: flex; gap: 20px;}
+#main_wrap header .header .container .menu a {text-transform: uppercase; font-weight: 500; font-size: 0.875rem;}
+#main_wrap header .header .container h1{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: max-content;}
+#main_wrap header .header .container h1 a {}
+#main_wrap header .header .container h1 a img {}
+#main_wrap header .header .container .right {display: flex; gap: 15px;}
+#main_wrap header .header .container .right a {}
+#main_wrap header .header .container .right a img {}

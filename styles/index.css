@@ -1,0 +1,74 @@
+body * {transition: all 0.3s; overflow: hidden;}
+#main_wrap {min-height: 100vh;}
+
+#main_wrap {}
+#main_wrap header {position: relative; width: 100%;}
+
+/* 띠배너====================================================================================== */
+#main_wrap header .line_bnr {background: #000; height: 30px; position: relative; padding: 0 380px;}
+#main_wrap header .line_bnr * {color: #fff; text-transform: uppercase; font-size: 0.75rem; line-height: 30px; overflow: hidden;}
+#main_wrap header .line_bnr .container {}
+#main_wrap header .line_bnr .center {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: max-content;}
+#main_wrap header .line_bnr .right {position: absolute; right: 380px; top: 50%; transform: translateY(-50%); width: max-content;}
+#main_wrap header .line_bnr .right span {margin-right: 5px;}
+#main_wrap header .line_bnr .right img {}
+
+/* 상단 비디오====================================================================================== */
+#main_wrap header .viedo {}
+#main_wrap header .viedo .video_play {position: relative;}
+#main_wrap header .viedo .video_play video {}
+#main_wrap header .viedo .txt {position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); width: max-content;}
+#main_wrap header .viedo .txt * {text-transform: uppercase;}
+#main_wrap header .viedo .txt h1 {font-weight: 900; font-size: 2.5rem; color: #fff}
+#main_wrap header .viedo .txt p {margin: 30px 0; font-size: 0.75rem; color: #fff;}
+#main_wrap header .viedo .txt .btn {padding: 15px 30px; border: 1px solid #000; width: max-content; background: #fff; margin: 0 auto; position: relative; box-sizing: border-box; }
+#main_wrap header .viedo .txt .btn a {text-transform: uppercase; font-size: 0.938rem; font-weight: 500;}
+#main_wrap header .viedo .txt .btn:hover {border: 1px solid #000; outline: 1px solid #000;}
+#main_wrap header .viedo .txt .btn::after {
+    content: ''; /* 내용이 없는 가상 요소 */
+    position: absolute; bottom: 0; /* 부모 요소의 bottom 위치에 배치 */ left: 0;
+    width: 100%; /* 부모 요소의 전체 너비 */ height: 0px; /* 기본 border-bottom 높이 */
+    background: #000; /* 기본 border-bottom 색 */
+}
+#main_wrap header .viedo .txt .btn:hover::after {height: 1px; /* hover 시 bottom border 두께 1px로 변경 */}
+
+/* 1행 ====================================================================================== */
+#main_wrap main {}
+#main_wrap main .row1 {padding: 140px 380px 70px;}
+#main_wrap main .row1 .container {width: max-content; text-align: center;}
+#main_wrap main .row1 .container h1 {font-size: 1.75rem; font-weight: 900; text-transform: uppercase;}
+#main_wrap main .row1 .container .img {margin: 40px 0;}
+#main_wrap main .row1 .container .img img {}
+#main_wrap main .row1 .container p {display: flex; flex-flow: column nowrap; gap: 20px; justify-content: center; align-items: center;}
+#main_wrap main .row1 .container p span {font-size: 0.75rem;}
+#main_wrap main .row1 .container p a {
+    padding: 15px 30px; position: relative;
+    border: 1px solid #000; background: #fff; width: max-content; box-sizing: border-box; 
+    text-transform: uppercase; font-size: 0.938rem; font-weight: 500;
+}
+#main_wrap main .row1 .container p a:hover {border: 1px solid #000; outline: 1px solid #000;}
+#main_wrap main .row1 .container p a::after {
+    content: ''; /* 내용이 없는 가상 요소 */
+    position: absolute; bottom: 0; /* 부모 요소의 bottom 위치에 배치 */ left: 0;
+    width: 100%; /* 부모 요소의 전체 너비 */ height: 0px; /* 기본 border-bottom 높이 */
+    background: #000; /* 기본 border-bottom 색 */
+}
+#main_wrap main .row1 .container p a:hover::after {height: 1px; /* hover 시 bottom border 두께 1px로 변경 */}
+
+/* 2행 ====================================================================================== */
+#main_wrap main .row2 {}
+#main_wrap main .row2 .container {}
+#main_wrap main .row2 .container h1 {}
+#main_wrap main .row2 .container .contents {}
+#main_wrap main .row2 .container .contents .left {}
+#main_wrap main .row2 .container .contents .left img {}
+#main_wrap main .row2 .container .contents .right {}
+#main_wrap main .row2 .container .contents .right .product {}
+#main_wrap main .row2 .container .contents .right .product .img {}
+#main_wrap main .row2 .container .contents .right .product .img .new_like {}
+#main_wrap main .row2 .container .contents .right .product .img .new_like span {}
+#main_wrap main .row2 .container .contents .right .product .img .new_like #like {}
+#main_wrap main .row2 .container .contents .right .product .img .new_like #like img {}
+#main_wrap main .row2 .container .contents .right .product .img a {}
+#main_wrap main .row2 .container .contents .right .product .img a img {}
+#main_wrap main .row2 .container .contents .right .product .txt {}
