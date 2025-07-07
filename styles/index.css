@@ -78,10 +78,16 @@ body * {transition: all 0.3s; overflow: hidden;}
     width: calc(100% / 2); height: 100%;
     display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; gap: 10px;
 }
-#main_wrap main .row2 .container .contents .right .product .img {padding: 10px; width: 270px; height: 270px;}
+#main_wrap main .row2 .container .contents .right .product .img {
+    padding: 10px; width: 270px; height: 270px;
+    display: flex; align-items: center; justify-content: center; flex-flow: column nowrap;
+    position: relative;
+}
 #main_wrap main .row2 .container .contents .right .product .img .new_like {
     display: flex; justify-content: space-between;
-    width: calc(100% - 20px);
+    width: 100%;
+    position: absolute; top: 0px; right: 0px; padding: 10px;
+
 }
 #main_wrap main .row2 .container .contents .right .product .img .new_like span {font-size: 0.688rem; background: #7F7F7F; color: #fff; padding: 5px 7px;}
 #main_wrap main .row2 .container .contents .right .product .img .new_like .like {}
@@ -143,20 +149,20 @@ body * {transition: all 0.3s; overflow: hidden;}
     font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
     margin-bottom: 40px;
 }
-#main_wrap main .row3 .container div {display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; gap: 20px;}
-#main_wrap main .row3 .container div a {width: calc(100% / 2); height: 575px; position: relative;}
+#main_wrap main .row3 .container div {display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; gap: 20px; height: 575px;}
+#main_wrap main .row3 .container div a {width: calc(100% / 2); height: 100%; position: relative;}
 #main_wrap main .row3 .container div a:first-of-type {background: url(../images/row3001.png) no-repeat center / cover;}
 #main_wrap main .row3 .container div a:last-of-type {background: url(../images/row3002.png) no-repeat center / cover;}
 #main_wrap main .row3 .container div a span {font-size: 1.75rem; font-weight: 600; color: #fff; text-transform: uppercase; border-bottom: 2px solid #fff; position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);}
 
 /* 4행 ====================================================================================== */
-#main_wrap main .row4 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0px;}
+#main_wrap main .row4 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
 #main_wrap main .row4 .container {text-align: center;}
 #main_wrap main .row4 .container h1 {
     font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
     margin-bottom: 40px;
 }
-#main_wrap main .row4 .container p {
+#main_wrap main .row4 .container > p {
     font-size: 0.75rem; text-transform: uppercase; line-height: 120%;
     margin-bottom: 40px;
 }
@@ -164,14 +170,281 @@ body * {transition: all 0.3s; overflow: hidden;}
     display: flex; justify-content: space-between; align-items: center; gap: 50px;
     height: 450px;
 }
-#main_wrap main .row4 .container .wrap .video {width: 800px; height: 100%; background: aqua;}
-#main_wrap main .row4 .container .wrap .product {display: flex; flex-flow: column nowrap; justify-content: space-between; width: 270px; height: 100%;}
-#main_wrap main .row4 .container .wrap .product .img {width: 270px; height: 270px; position: relative;}
-#main_wrap main .row4 .container .wrap .product .img .like {position: absolute;}
+#main_wrap main .row4 .container .wrap .video {width: 800px; height: 100%;}
+#main_wrap main .row4 .container .wrap .product {
+    display: flex; flex-flow: column nowrap; justify-content: space-between; 
+    width: 270px; height: 450px; gap: 10px;
+}
+#main_wrap main .row4 .container .wrap .product .img {
+    width: 270px; height: 270px; position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+#main_wrap main .row4 .container .wrap .product .img .like {position: absolute; top: 0; right: 0; padding: 10px;}
 #main_wrap main .row4 .container .wrap .product .img .like img {}
 #main_wrap main .row4 .container .wrap .product .img img {}
+
+#main_wrap main .row4 .container .wrap .product .txt {
+    display: flex; flex-flow: column nowrap; align-items: center; justify-content: space-between;
+    width: 100%; padding: 0 10px; height: 116px;
+}
+#main_wrap main .row4 .container .wrap .product .txt h2 {}
+#main_wrap main .row4 .container .wrap .product .txt h2 a {font-size: 0.75rem; text-transform: uppercase; line-height: 120%; font-weight: 600;}
+#main_wrap main .row4 .container .wrap .product .txt .select {
+    width: 270px; height: 70px; position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+#main_wrap main .row4 .container .wrap .product .txt .select span {background: #fff; position: absolute; font-size: 0.75rem; top: 5px; left: 7.5px; padding: 0 5px;}
+#main_wrap main .row4 .container .wrap .product .txt .select select[name=option_list] {
+    width: 100%; padding: 0 20px; height: 50px;
+    border: 1px solid #000;
+    background: url(../images/arrow_back.png) no-repeat;
+    background-position: 240px 50%;
+}
+#main_wrap main .row4 .container .wrap .product .txt .select select[name=option_list] option {font-size: 0.75rem; text-transform: uppercase;}
+#main_wrap main .row4 .container .wrap .product .txt p {font-weight: 500; font-size: 0.875rem;}
+
 #main_wrap main .row4 .container .wrap .product .btn .add_cart {
     background: #000; color: #fff;
     text-transform: uppercase; font-size: 0.875rem;
     width: 270px; height: 44px; 
+}
+#main_wrap main .row4 .container .wrap .product .btn .add_cart:hover {background: rgb(0, 0, 0, 0.9);}
+
+
+
+/* 5행 ====================================================================================== */
+#main_wrap main .row5 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
+#main_wrap main .row5 .container {text-align: center;}
+#main_wrap main .row5 .container h1 {
+    font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
+    margin-bottom: 40px;
+}
+#main_wrap main .row5 .container > p {
+    font-size: 0.75rem; text-transform: uppercase; line-height: 120%;
+    margin-bottom: 40px;
+}
+#main_wrap main .row5 .container .wrap {
+    display: flex; justify-content: space-between; align-items: center; gap: 50px;
+    height: 450px;
+}
+#main_wrap main .row5 .container .wrap .product {
+    display: flex; flex-flow: column nowrap; justify-content: space-between; gap: 10px;
+    width: 270px; height: 100%; 
+}
+#main_wrap main .row5 .container .wrap .product .img {
+    width: 270px; height: 270px; position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+#main_wrap main .row5 .container .wrap .product .img .like {position: absolute; top: 0; right: 0; padding: 10px;}
+#main_wrap main .row5 .container .wrap .product .img .like img {}
+#main_wrap main .row5 .container .wrap .product .img img {}
+#main_wrap main .row5 .container .wrap .product .txt {
+    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; gap: 0px;
+    width: 100%; height: 116px;
+}
+#main_wrap main .row5 .container .wrap .product .txt h2 {}
+#main_wrap main .row5 .container .wrap .product .txt h2 a {font-size: 0.75rem; text-transform: uppercase; line-height: 120%; font-weight: 600;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color {
+    display: flex; flex-flow: column nowrap; justify-content: space-between; gap: 15px;
+    width: 100%; height: 24px;
+}
+#main_wrap main .row5 .container .wrap .product .txt .option_color span {display: flex; justify-content: center; gap: 10px; align-items: center;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span button {
+    width: 24px; height: 24px; padding: 2px; position: relative;
+    border: 1px solid #7F7F7F; box-sizing: border-box;
+}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span button:hover {border: 1px solid #000000;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span button span {width: 18px; height: 18px; display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .foda_thum1 span {background: #EDDBCA;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .foda_thum2 span {background: #EED7C8;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .foda_thum3 span {background: #E8D0B6;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .foda_thum4 span {background: #E2CCBD;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .foda_thum5 span {background: #E1D1BB;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .foda_thum6 span {background: #E0CBBA;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .foda_thum7 span {background: #DDC5AF;}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .next {
+    border: none; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 16px; height: 16px;
+    display: flex; align-items: center; justify-content: center;
+}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .next img {}
+#main_wrap main .row5 .container .wrap .product .txt .option_color > span .next:hover {border: none;}
+#main_wrap main .row5 .container .wrap .product .txt p {font-weight: 500; font-size: 0.875rem;}
+#main_wrap main .row5 .container .wrap .product .btn .add_cart {
+    background: #000; color: #fff;
+    text-transform: uppercase; font-size: 0.875rem;
+    width: 270px; height: 44px; 
+}
+#main_wrap main .row5 .container .wrap .product .btn .add_cart:hover {background: rgb(0, 0, 0, 0.9);}
+
+#main_wrap main .row5 .container .wrap .video {width: 800px; height: 100%;}
+
+
+/* 6행 ====================================================================================== */
+#main_wrap main .row6 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
+#main_wrap main .row6 .container {text-align: center;}
+#main_wrap main .row6 .container h1 {
+    font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
+    margin-bottom: 40px;
+}
+#main_wrap main .row6 .container .contents {display: flex; justify-content: space-between; align-items: center; gap: 25px;}
+#main_wrap main .row6 .container .contents .product {
+    height: 450px; width: 270px;
+    display: flex; flex-flow: column nowrap; gap: 10px; justify-content: space-between; align-items: center;
+}
+#main_wrap main .row6 .container .contents .product .img {
+    width: 100%; height: 270px; position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+#main_wrap main .row6 .container .contents .product .img .like {position: absolute; top: 10px; right: 10px;}
+#main_wrap main .row6 .container .contents .product .img .like img {}
+#main_wrap main .row6 .container .contents .product .img img {}
+#main_wrap main .row6 .container .contents .product .txt {
+    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center;
+    width: 100%; height: 116px;
+}
+#main_wrap main .row6 .container .contents .product .txt h2 {}
+#main_wrap main .row6 .container .contents .product .txt h2 a {font-size: 0.75rem; text-transform: uppercase; line-height: 120%; font-weight: 600;}
+#main_wrap main .row6 .container .contents .product .txt .option_color {
+    display: flex; flex-flow: row nowrap; justify-content: center; align-items: center; gap: 10px;
+    height: 24px; width: 100%;}
+#main_wrap main .row6 .container .contents .product .txt .option_color .thum {
+    width: 24px; height: 24px; padding: 2px; position: relative;
+    border: 1px solid #7F7F7F; box-sizing: border-box;
+}
+#main_wrap main .row6 .container .contents .product .txt .option_color .thum:hover {border: 1px solid #000000;}
+#main_wrap main .row6 .container .contents .product .txt .option_color .thum span {width: 18px; height: 18px; display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#main_wrap main .row6 .container .contents .pro1 .txt .option_color .thum1 span {background: #DC6D76;}
+#main_wrap main .row6 .container .contents .pro1 .txt .option_color .thum2 span {background: #DC6D76;}
+#main_wrap main .row6 .container .contents .pro1 .txt .option_color .thum3 span {background: #C9726A;}
+#main_wrap main .row6 .container .contents .pro2 .txt .select {
+    width: 270px; height: 70px; position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+#main_wrap main .row6 .container .contents .pro2 .txt .select span {background: #fff; position: absolute; font-size: 0.75rem; top: 5px; left: 7.5px; padding: 0 5px;}
+#main_wrap main .row6 .container .contents .pro2 .txt .select select[name=option_list] {
+    width: 100%; padding: 0 20px; height: 50px;
+    border: 1px solid #000;
+}
+#main_wrap main .row6 .container .contents .pro2 .txt .select select[name=option_list] option {font-size: 0.75rem; text-transform: uppercase;}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum1 span:nth-of-type(1) {background: #E6AE91; width: 18px; height: 18px;}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum1 span:nth-of-type(2) {background: #CB9375; width: 9px; height: 9px; transform: translate(0, -100%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum1 span:nth-of-type(3) {background: #CF7B70; width: 9px; height: 9px; transform: translate(-100%, 0);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum1 span:nth-of-type(4) {background: #613B46; width: 9px; height: 9px; transform: translate(0%, 0%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum2 span:nth-of-type(1) {background: #E5C7BB; width: 18px; height: 18px;}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum2 span:nth-of-type(2) {background: #E18448; width: 9px; height: 9px; transform: translate(0, -100%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum2 span:nth-of-type(3) {background: #B27E6E; width: 9px; height: 9px; transform: translate(-100%, 0);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum2 span:nth-of-type(4) {background: #955753; width: 9px; height: 9px; transform: translate(0%, 0%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum3 span:nth-of-type(1) {background: #B48679; width: 18px; height: 18px;}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum3 span:nth-of-type(2) {background: #D9C0B9; width: 9px; height: 9px; transform: translate(0, -100%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum3 span:nth-of-type(3) {background: #8B6054; width: 9px; height: 9px; transform: translate(-100%, 0);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum3 span:nth-of-type(4) {background: #4F3D34; width: 9px; height: 9px; transform: translate(0%, 0%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum4 span:nth-of-type(1) {background: #D4AF8D; width: 18px; height: 18px;}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum4 span:nth-of-type(2) {background: #C7917B; width: 9px; height: 9px; transform: translate(0, -100%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum4 span:nth-of-type(3) {background: #CB908F; width: 9px; height: 9px; transform: translate(-100%, 0);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum4 span:nth-of-type(4) {background: #AF6558; width: 9px; height: 9px; transform: translate(0%, 0%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum5 span:nth-of-type(1) {background: #D6A16A; width: 18px; height: 18px;}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum5 span:nth-of-type(2) {background: #AC7473; width: 9px; height: 9px; transform: translate(0, -100%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum5 span:nth-of-type(3) {background: #973857; width: 9px; height: 9px; transform: translate(-100%, 0);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum5 span:nth-of-type(4) {background: #564147; width: 9px; height: 9px; transform: translate(0%, 0%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum6 span:nth-of-type(1) {background: #CFB7AB; width: 18px; height: 18px;}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum6 span:nth-of-type(2) {background: #DDB198; width: 9px; height: 9px; transform: translate(0, -100%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum6 span:nth-of-type(3) {background: #D58D7E; width: 9px; height: 9px; transform: translate(-100%, 0);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum6 span:nth-of-type(4) {background: #342A33; width: 9px; height: 9px; transform: translate(0%, 0%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum7 span:nth-of-type(1) {background: #F5D9AA; width: 18px; height: 18px;}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum7 span:nth-of-type(2) {background: #D4956D; width: 9px; height: 9px; transform: translate(0, -100%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum7 span:nth-of-type(3) {background: #C79D7D; width: 9px; height: 9px; transform: translate(-100%, 0);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum7 span:nth-of-type(4) {background: #684B3B; width: 9px; height: 9px; transform: translate(0%, 0%);}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color .next {
+    border: none; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 16px; height: 16px;
+    display: flex; align-items: center; justify-content: center;
+}
+#main_wrap main .row6 .container .contents .pro3 .txt .option_color > span .next img {}
+
+
+
+
+
+#main_wrap main .row6 .container .contents .pro4 .txt .option_color .thum1 span {background: #BA674E;}
+#main_wrap main .row6 .container .contents .pro4 .txt .option_color .thum2 span {background: #EBE5E1;}
+#main_wrap main .row6 .container .contents .pro4 .txt .option_color .thum3 span {background: #AA5E5C;}
+#main_wrap main .row6 .container .contents .product .txt p {font-weight: 500; font-size: 0.875rem;}
+
+#main_wrap main .row6 .container .contents .product .btn .add_cart {
+    background: #000; color: #fff;
+    text-transform: uppercase; font-size: 0.875rem;
+    width: 270px; height: 44px; 
+}
+#main_wrap main .row6 .container .contents .product .btn .add_cart:hover {background: rgb(0, 0, 0, 0.9);}
+
+
+/* 7행 ====================================================================================== */
+#main_wrap main .row7 {max-width: 1760px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
+#main_wrap main .row7 .container {display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; gap: 40px; width: 100%;}
+#main_wrap main .row7 .container * {text-align: center;}
+#main_wrap main .row7 .container .row {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; height: 580px;
+}
+#main_wrap main .row7 .container .row .left {display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; gap: 30px;}
+#main_wrap main .row7 .container .row .left h1 {font-size: 1.75rem; font-weight: 900; text-transform: uppercase;}
+#main_wrap main .row7 .container .row .left p {font-size: 0.75rem; text-transform: uppercase;}
+#main_wrap main .row7 .container .row .left a {
+    text-transform: uppercase; font-size: 0.938rem; font-weight: 500;
+    padding: 15px 50px; background: #000; color: #fff;
+}
+#main_wrap main .row7 .container .row .left a:hover {background: rgb(0, 0, 0, 0.9);}
+#main_wrap main .row7 .container .row .right {display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; gap: 30px;}
+#main_wrap main .row7 .container .row .right h1 {font-size: 1.75rem; font-weight: 900; text-transform: uppercase;}
+#main_wrap main .row7 .container .row .right p {font-size: 0.75rem; text-transform: uppercase;}
+#main_wrap main .row7 .container .row .right a {
+    text-transform: uppercase; font-size: 0.938rem; font-weight: 500;
+    padding: 15px 50px; background: #000; color: #fff;
+}
+#main_wrap main .row7 .container .row .right a:hover {
+    background: rgb(0, 0, 0, 0.9);}
+
+#main_wrap main .row7 .container .row11 .left {
+    background: url(../images/row7_001.png) no-repeat center / cover;
+    width: calc(100% - 800px); height: 580px;
+}
+#main_wrap main .row7 .container > .row11 .right {width: 800px; height: 580px;}
+#main_wrap main .row7 .container > .row22 .right {
+    background: url(../images/row7_002.png) no-repeat center / cover;
+    width: 960px; height: 580px;
+}
+#main_wrap main .row7 .container > .row33 .left {
+    background: url(../images/row7_003.png) no-repeat center / cover; 
+    width: 960px; height: 580px;
+}
+
+#main_wrap main .row7 .container > .row22 .left {width: 800px; height: 580px;}
+#main_wrap main .row7 .container > .row33 .right {width: 800px; height: 580px;}
+
+
+/* 8행 ====================================================================================== */
+#main_wrap main .row8 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
+#main_wrap main .row8 .container {display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; gap: 40px; width: 100%;}
+#main_wrap main .row8 .container * {text-align: center;}
+#main_wrap main .row8 .container h1 {
+    font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
+    margin-bottom: 40px;
+}
+#main_wrap main .row8 .container .contents {display: flex; gap: 26.67px; justify-content: space-between; align-items: center;}
+#main_wrap main .row8 .container .contents .offer {width: 270px; height: 493px; display: flex; flex-flow: column nowrap; align-items: center; justify-content: space-between ; gap: 35px;}
+#main_wrap main .row8 .container .contents .offer .img {width: 270px; height: 270px;}
+#main_wrap main .row8 .container .contents .offer .img img {}
+#main_wrap main .row8 .container .contents .offer .txt {display: flex; flex-flow: column nowrap; align-items: center; justify-content: space-between ; gap: 30px;}
+#main_wrap main .row8 .container .contents .offer .txt h2 {font-weight: 700;}
+#main_wrap main .row8 .container .contents .offer .txt p {line-height: 1.2;}
+#main_wrap main .row8 .container .contents .offer .btn {border: 1px solid #000; height: 50px; position: relative; box-sizing: border-box; }
+#main_wrap main .row8 .container .contents .offer .btn a {font-weight: 500; padding: 17px 42px; line-height: 50px; position: relative;}
+#main_wrap main .row8 .container .contents .offer .btn:hover {border: 1px solid #000; outline: 1px solid #000;}
+#main_wrap main .row8 .container .contents .offer .btn:hover::after {height: 1px;}
+#main_wrap main .row8 .container .contents .offer .btn::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 0px;
+    background: #000;
 }
