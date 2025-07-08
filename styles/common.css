@@ -1,3 +1,4 @@
+/* 헤더 ====================================================================================== */
 #main_wrap header .header {position: absolute; top: 30px; left: 0; z-index: 10; width: 100%;}
 #main_wrap header .header .container {
     padding: 15px  80px; height: 90px;
@@ -11,3 +12,19 @@
 #main_wrap header .header .container .right {display: flex; gap: 15px;}
 #main_wrap header .header .container .right a {}
 #main_wrap header .header .container .right a img {}
+
+/* 풋터 ====================================================================================== */
+#main_wrap footer {background: #000;}
+#main_wrap footer * {color: #fff; text-transform: uppercase; font-size: 0.625rem;}
+#main_wrap footer .container {
+    max-width: 1800px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 50px 0;
+    display: flex; flex-flow: column nowrap; justify-content: space-between; gap: 70px;
+}
+#main_wrap footer .container .top span {font-weight: 600; line-height: 1.2;}
+#main_wrap footer .container .top {display: flex; align-items: flex-start; justify-content: center; gap: 55px; width: calc(100% - 640px);}
+#main_wrap footer .container .top .company {display: flex; flex-flow: column nowrap; align-items: flex-start; justify-content: space-between; gap: 12px; width: 150px;}
+#main_wrap footer .container .top .shop {display: flex; flex-flow: column nowrap; align-items: flex-start; justify-content: space-between; gap: 12px; width: 150px;}
+#main_wrap footer .container .top .service {display: flex; flex-flow: column nowrap; align-items: flex-start; justify-content: space-between; gap: 12px; width: 150px;}
+#main_wrap footer .container .bottom {display: flex; flex-flow: column nowrap; align-items: flex-end; justify-content: flex-end; gap: 20px;}
+#main_wrap footer .container .bottom .sns {display: flex; gap: 15px;}
+#main_wrap footer .container .bottom span {font-weight: 500;}
