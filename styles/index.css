@@ -10,9 +10,9 @@ body * {transition: all 0.3s; overflow: hidden;}
 #main_wrap header {position: relative; width: 100%;}
 
 /* 띠배너====================================================================================== */
-#main_wrap header .line_bnr {background: #000; height: 30px; position: relative; padding: 0 380px;}
+#main_wrap header .line_bnr {background: #000; height: 30px; position: relative;}
 #main_wrap header .line_bnr * {color: #fff; text-transform: uppercase; font-size: 0.75rem; line-height: 30px; overflow: hidden;}
-#main_wrap header .line_bnr .container {max-width: 1160px; min-width: 340px; overflow: hidden;}
+#main_wrap header .line_bnr .container {max-width: 1160px; min-width: 430px; overflow: hidden;}
 #main_wrap header .line_bnr .center {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: max-content;}
 #main_wrap header .line_bnr .right {position: absolute; right: 380px; top: 50%; transform: translateY(-50%); width: max-content;}
 #main_wrap header .line_bnr .right span {margin-right: 5px;}
@@ -21,7 +21,7 @@ body * {transition: all 0.3s; overflow: hidden;}
 /* 상단 비디오====================================================================================== */
 #main_wrap header .viedo {}
 #main_wrap header .viedo .video_play {position: relative; margin: 0 auto;}
-#main_wrap header .viedo .video_play video {max-width: 100%; min-width: 340px; overflow: hidden;}
+#main_wrap header .viedo .video_play video {max-width: 100%; min-width: 430px; overflow: hidden;}
 #main_wrap header .viedo .txt {position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); width: max-content;}
 #main_wrap header .viedo .txt * {text-transform: uppercase;}
 #main_wrap header .viedo .txt h1 {font-weight: 900; font-size: 2.5rem; color: #fff}
@@ -39,7 +39,7 @@ body * {transition: all 0.3s; overflow: hidden;}
 
 /* 1행 ====================================================================================== */
 #main_wrap main {}
-#main_wrap main .row1 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto}
+#main_wrap main .row1 {max-width: 1160px; min-width: 430px; overflow: hidden; margin: 0 auto}
 #main_wrap main .row1 .container {text-align: center; padding: 140px 0 70px;}
 #main_wrap main .row1 .container h1 {font-size: 1.75rem; font-weight: 900; text-transform: uppercase;}
 #main_wrap main .row1 .container .img {margin: 40px 0;}
@@ -61,8 +61,8 @@ body * {transition: all 0.3s; overflow: hidden;}
 #main_wrap main .row1 .container p a:hover::after {height: 1px; /* hover 시 bottom border 두께 1px로 변경 */}
 
 /* 2행 ====================================================================================== */
-#main_wrap main .row2 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
-#main_wrap main .row2 .container {text-align: center;}
+#main_wrap main .row2 {}
+#main_wrap main .row2 .container {text-align: center; max-width: 1160px; min-width: 430px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
 #main_wrap main .row2 .container h1 {
     font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
     margin-bottom: 40px;
@@ -143,8 +143,8 @@ body * {transition: all 0.3s; overflow: hidden;}
 #main_wrap main .row2 .container .contents .right .product .btn .add_cart:hover {background: rgb(0, 0, 0, 0.9);}
 
 /* 3행 ====================================================================================== */
-#main_wrap main .row3 {max-width: 100%; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
-#main_wrap main .row3 .container {text-align: center;}
+#main_wrap main .row3 {}
+#main_wrap main .row3 .container {text-align: center; max-width: 100%; min-width: 430px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
 #main_wrap main .row3 .container h1 {
     font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
     margin-bottom: 40px;
@@ -156,8 +156,8 @@ body * {transition: all 0.3s; overflow: hidden;}
 #main_wrap main .row3 .container div a span {font-size: 1.75rem; font-weight: 600; color: #fff; text-transform: uppercase; border-bottom: 2px solid #fff; position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);}
 
 /* 4행 ====================================================================================== */
-#main_wrap main .row4 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
-#main_wrap main .row4 .container {text-align: center;}
+#main_wrap main .row4 {}
+#main_wrap main .row4 .container {text-align: center; max-width: 1160px; min-width: 430px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
 #main_wrap main .row4 .container h1 {
     font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
     margin-bottom: 40px;
@@ -213,8 +213,8 @@ body * {transition: all 0.3s; overflow: hidden;}
 
 
 /* 5행 ====================================================================================== */
-#main_wrap main .row5 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
-#main_wrap main .row5 .container {text-align: center;}
+#main_wrap main .row5 {}
+#main_wrap main .row5 .container {text-align: center; max-width: 1160px; min-width: 430px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
 #main_wrap main .row5 .container h1 {
     font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
     margin-bottom: 40px;
@@ -281,8 +281,8 @@ body * {transition: all 0.3s; overflow: hidden;}
 
 
 /* 6행 ====================================================================================== */
-#main_wrap main .row6 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
-#main_wrap main .row6 .container {text-align: center;}
+#main_wrap main .row6 {}
+#main_wrap main .row6 .container {text-align: center; max-width: 1160px; min-width: 430px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
 #main_wrap main .row6 .container h1 {
     font-size: 1.75rem; font-weight: 900; text-transform: uppercase;
     margin-bottom: 40px;
@@ -380,8 +380,11 @@ body * {transition: all 0.3s; overflow: hidden;}
 
 
 /* 7행 ====================================================================================== */
-#main_wrap main .row7 {max-width: 1760px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
-#main_wrap main .row7 .container {display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; gap: 40px; width: 100%;}
+#main_wrap main .row7 {}
+#main_wrap main .row7 .container {
+    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; gap: 40px; width: 100%;
+    max-width: 1760px; min-width: 430px; overflow: hidden; margin: 0 auto; padding: 70px 0;
+}
 #main_wrap main .row7 .container * {text-align: center;}
 #main_wrap main .row7 .container .row {
     display: flex; align-items: center; justify-content: space-between;
@@ -407,7 +410,7 @@ body * {transition: all 0.3s; overflow: hidden;}
 
 #main_wrap main .row7 .container .row11 .left {
     background: url(../images/row7_001.png) no-repeat center / cover;
-    width: calc(100% - 800px); height: 580px;
+    width: 960px; height: 580px;
 }
 #main_wrap main .row7 .container > .row11 .right {width: 800px; height: 580px;}
 #main_wrap main .row7 .container > .row22 .right {
@@ -424,8 +427,11 @@ body * {transition: all 0.3s; overflow: hidden;}
 
 
 /* 8행 ====================================================================================== */
-#main_wrap main .row8 {max-width: 1160px; min-width: 340px; overflow: hidden; margin: 0 auto; padding: 70px 0;}
-#main_wrap main .row8 .container {display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; gap: 40px; width: 100%;}
+#main_wrap main .row8 {}
+#main_wrap main .row8 .container {
+    max-width: 1160px; min-width: 430px; overflow: hidden; margin: 0 auto; padding: 70px 0;
+    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center; gap: 40px;
+}
 #main_wrap main .row8 .container * {text-align: center;}
 #main_wrap main .row8 .container h1 {
     font-size: 1.75rem; font-weight: 900; text-transform: uppercase;

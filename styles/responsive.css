@@ -1,0 +1,153 @@
+@media screen and (max-width: 430px) {
+    /* 띠배너====================================================================================== */
+    #main_wrap header .line_bnr .right {display: none;}
+    #main_wrap header .line_bnr .right * {font-weight: 400;}
+
+    /* 헤더 ====================================================================================== */
+    #main_wrap header .header .container {padding: 5px 15px; height: 40px;}
+    #main_wrap header .header .container .menu a {display: none;}
+    #main_wrap header .header .container .menu a:last-of-type {display: block;}
+    #main_wrap header .header .container h1 {display: none;}
+
+    /* 상단 비디오====================================================================================== */
+    #main_wrap header .viedo .video_play {height: 430px; width: 100%;}
+    #main_wrap header .viedo .video_play video {object-fit: cover; width: 100%; height: 100%;}
+    #main_wrap header .viedo .txt * {text-align: center; width: 100%;}
+    #main_wrap header .viedo .txt h1 {font-size: 1.25rem;}
+    #main_wrap header .viedo .txt p {width: 70%; margin: 15px auto;}
+    #main_wrap header .viedo .txt .btn {padding: 10px 20px;}
+    #main_wrap header .viedo .txt .btn a {font-size: 0.75rem;}
+
+    /* 1행 ====================================================================================== */
+    #main_wrap main .row1 .container {text-align: center; padding: 80px 0 40px;}
+    #main_wrap main .row1 .container h1 {font-size: 0.875rem;}
+    #main_wrap main .row1 .container .img {margin: 20px 0;}
+    #main_wrap main .row1 .container .img img {width: 140%; transform: translateX(-14%);}
+    #main_wrap main .row1 .container p a {padding: 10px 20px; font-size: 0.75rem;}
+
+    /* 2행 ====================================================================================== */
+    #main_wrap main .row2 .container {width: 100%; padding: 40px 15px;}
+    #main_wrap main .row2 .container h1 {margin-bottom: 20px; font-size: 0.875rem;}
+    #main_wrap main .row2 .container .contents {flex-flow: column nowrap; width: 100%; gap: 15px;}
+    #main_wrap main .row2 .container .contents .left {width: 100%;}
+    #main_wrap main .row2 .container .contents .right {width: 100%; gap: 0px; height: auto;}
+    #main_wrap main .row2 .container .contents .right .product {width: 49%; height: max-content;}
+    #main_wrap main .row2 .container .contents .right .product * {font-size: 0.75rem;}
+    #main_wrap main .row2 .container .contents .right .product .img {width: 100%;}
+    #main_wrap main .row2 .container .contents .right .product .txt {height: 135px; gap: 10px;}
+    #main_wrap main .row2 .container .contents .right .product .txt * {font-style: 0.75rem;}
+    #main_wrap main .row2 .container .contents .right .product .txt p:first-of-type {height: 80px; gap: 10px;}
+    #main_wrap main .row2 .container .contents .right .product .txt p:first-of-type > span:nth-of-type(2) {gap: 5px;}
+
+    /* 3행 ====================================================================================== */
+    #main_wrap main .row3 {width: 100%;}
+    #main_wrap main .row3 .container {padding: 40px 0; width: 100%;}
+    #main_wrap main .row3 .container h1 {font-size: 0.875rem; margin-bottom: 20px;}
+    #main_wrap main .row3 .container div {flex-flow: column nowrap; gap: 10px; width: 100%; height: max-content;}
+    #main_wrap main .row3 .container div a {width: 100%; height: 430px;}
+    #main_wrap main .row3 .container div a span {font-size: 0.875rem;}
+
+    /* 4행 ====================================================================================== */
+    #main_wrap main .row4 .container {width: 100%; padding: 40px 15px;}
+    #main_wrap main .row4 .container h1 {margin-bottom: 5px; font-size: 0.875rem;}
+    #main_wrap main .row4 .container .wrap {flex-flow: column nowrap; margin: 0 auto; height: max-content; gap: 10;}
+    #main_wrap main .row4 .container > p {margin-bottom: 20px;}
+    #main_wrap main .row4 .container .wrap .product {margin: 0 auto; width: 49%;}
+    #main_wrap main .row4 .container .wrap .product * {font-size: 0.75rem;}
+    #main_wrap main .row4 .container .wrap .product .img {width: 100%;}
+
+    #main_wrap main .row4 .container .wrap .product .txt {height: max-content;}
+    #main_wrap main .row4 .container .wrap .product .txt .select {width: 100%;}
+    #main_wrap main .row4 .container .wrap .product .txt .select select[name=option_list] {height: 40px;}
+
+    #main_wrap main .row4 .container .wrap .video {width: 400px; height: 225px;}
+    #main_wrap main .row4 .container .wrap .video iframe {width: 400px; height: 225px;}
+    
+    #main_wrap main .row4 .container .wrap .product .btn .add_cart {width: 100%; font-size: 0.75rem;}
+
+    /* 5행 ====================================================================================== */
+    #main_wrap main .row5 .container {width: 100%; padding: 40px 15px;}
+    #main_wrap main .row5 .container h1 {margin-bottom: 5px; font-size: 0.875rem;}
+    #main_wrap main .row5 .container .wrap {display: grid; grid-template-columns: 1fr; margin: 0 auto; height: max-content; gap: 10;}
+    #main_wrap main .row5 .container > p {margin-bottom: 20px;}
+    #main_wrap main .row5 .container .wrap .product {grid-row: 2;  margin: 0 auto; width: 49%;}
+    #main_wrap main .row5 .container .wrap .product * {font-size: 0.75rem;}
+    #main_wrap main .row5 .container .wrap .product .img {width: 100%;}
+
+    #main_wrap main .row5 .container .wrap .product .txt {height: 90px;}
+    #main_wrap main .row5 .container .wrap .product .txt .option_color > span {gap: 5px;}
+    #main_wrap main .row5 .container .wrap .product .txt .option_color > span .foda_thum1 {display: none;}
+
+    #main_wrap main .row5 .container .wrap .video {grid-row: 1; width: 400px; height: 225px;}
+    #main_wrap main .row5 .container .wrap .video iframe {width: 400px; height: 225px;}
+    
+    #main_wrap main .row5 .container .wrap .product .btn .add_cart {width: 100%; font-size: 0.75rem;}
+
+
+
+    /* 6행 ====================================================================================== */
+    #main_wrap main .row6 .container {padding: 40px 15px; width: 100%;}
+    #main_wrap main .row6 .container h1 {font-size: 0.878rem;}
+    #main_wrap main .row6 .container .contents {flex-flow: row wrap; gap: 0;}
+    #main_wrap main .row6 .container .contents .product {width: 49%; margin-bottom: 15px; height: 45vh;}
+    #main_wrap main .row6 .container .contents .product:nth-of-type(3),
+    #main_wrap main .row6 .container .contents .product:nth-of-type(4) {margin-bottom: 0;}
+
+    #main_wrap main .row6 .container .contents .product .txt {height: 90px;}
+    #main_wrap main .row6 .container .contents .product .txt * {font-size: 0.75rem;}
+    #main_wrap main .row6 .container .contents .product .txt .option_color {gap: 5px;}
+    
+    #main_wrap main .row6 .container .contents .pro2 .txt .select {width: 100%}
+    #main_wrap main .row6 .container .contents .pro2 .txt .select select[name=option_list] {height: 40px;}
+
+    #main_wrap main .row6 .container .contents .pro3 .txt .option_color .thum1{display: none;}
+
+    #main_wrap main .row6 .container .contents .product .btn .add_cart {font-size: 0.75rem;}
+
+    /* 7행 ====================================================================================== */
+    #main_wrap main .row7 .container {width: 100%; padding: 40px 0;}
+    #main_wrap main .row7 .container .row {width: 100%; display: grid; grid-template-columns: 1fr; height: auto;}
+    #main_wrap main .row7 .container .row .left,
+    #main_wrap main .row7 .container .row .right {width: 100%; gap: 15px;}
+    #main_wrap main .row7 .container .row .left p,
+    #main_wrap main .row7 .container .row .right p {width: 80%;}
+    #main_wrap main .row7 .container .row .left a {font-size: 0.75rem; font-weight: 400;}
+    #main_wrap main .row7 .container .row .right a {font-size: 0.75rem; font-weight: 400;}
+    #main_wrap main .row7 .container .row .left h1 {font-size: 0.875rem;}
+    #main_wrap main .row7 .container .row .right h1 {font-size: 0.875rem;}
+
+    #main_wrap main .row7 .container .row11 .left {order: 1; height: 260px;}
+    #main_wrap main .row7 .container .row11 .right {order: 2; padding: 20px 0; height: auto;}
+    
+    #main_wrap main .row7 .container .row22 .left {grid-row: 2; padding: 20px 0; height: auto;}
+    #main_wrap main .row7 .container .row22 .right {grid-row: 1;}
+    #main_wrap main .row7 .container .row22 .left {order: 1; height: auto;}
+    #main_wrap main .row7 .container .row22 .right {order: 2; padding: 20px 0; height: auto; height: 260px;}
+    #main_wrap main .row7 .container .row33 .left {height: 260px;}
+    #main_wrap main .row7 .container .row33 .right {padding: 20px 0; height: 260px; padding: 20px 0; height: auto;}
+
+    /* 8행 ====================================================================================== */
+    #main_wrap main .row8 .container {gap: 0px; padding: 40px 15px;}
+    #main_wrap main .row8 .container h1 {margin-bottom: 20px; font-size: 0.875rem;}
+    #main_wrap main .row8 .container .contents {flex-flow: row wrap; width: 100%; gap: 0px;}
+    #main_wrap main .row8 .container .contents .offer {width: 49%; gap: 10px; height: 37vh; margin-bottom: 15px;}
+    #main_wrap main .row8 .container .contents .offer:nth-of-type(3),
+    #main_wrap main .row8 .container .contents .offer:nth-of-type(4) {margin-bottom: 0;}
+    #main_wrap main .row8 .container .contents .offer .img {width: 195px; height: 195px; object-fit: cover;}
+    #main_wrap main .row8 .container .contents .offer .img img {width: 100%}
+    #main_wrap main .row8 .container .contents .offer .txt {gap: 10px;}
+    #main_wrap main .row8 .container .contents .offer .txt h2 {font-size: 0.875rem;}
+    #main_wrap main .row8 .container .contents .offer .txt p {font-size: 0.75rem; height: 42px;}
+    #main_wrap main .row8 .container .contents .offer .btn {height: 40px;}
+    #main_wrap main .row8 .container .contents .offer .btn a {font-size: 0.75rem; padding: 0 30px; line-height: 40px;}
+
+
+
+    /* 풋터 ====================================================================================== */
+    #main_wrap footer .container {padding: 40px 15px; gap: 30px;}
+    #main_wrap footer .container .top {flex-flow: column nowrap; width: 100%; gap: 30px;}
+    #main_wrap footer .container .bottom {gap: 10px;}
+    #main_wrap footer .container .bottom .sns {gap: 10px;}
+    #main_wrap footer .container .bottom .sns img {width: 12px;}
+
+}
