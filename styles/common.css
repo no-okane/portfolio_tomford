@@ -1,5 +1,5 @@
 /* 헤더 ====================================================================================== */
-#main_wrap header .header {position: absolute; top: 30px; left: 0; z-index: 10; width: 100%;}
+#main_wrap header .header {position: absolute; top: 30px; left: 0; z-index: 10; width: 100%;  background-color: transparent;}
 #main_wrap header .header .container {
     padding: 15px  80px; height: 90px;
     display: flex; justify-content: space-between; align-items: center;
